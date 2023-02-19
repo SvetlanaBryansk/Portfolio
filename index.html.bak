@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Главная</title>
+
+<!-- панель навигации -->
+<nav class="top-menu">
+<link rel="stylesheet" href="h.css">
+  <ul class="menu-main">
+    <li><a href="работы.html" class="current">мои работы</a></li>
+	<li><a href="навыки.html">навыки</a></li>
+	<li><a href="отдых.html">отдых</a></li>
+    <li><a href="контакты.html">контакты</a></li> 
+  </ul> 
+</nav>
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<!-- home section -->
+<section class="home">
+    <div class="hero-content">
+        <h1 class="hero-heading"><span class="highlight">Привет, </span>Меня зовут Светлана!</h1>
+        <p class="profession">Я профессиональный бухгалтер и начинающий вэб-дизайнер.</p>
+        <p class="информация"> И этот сайт обо мне, о моих интересах и просто о жизни... </p>
+		<p> Сайт написан мной с помощью html, css и javascript.
+		И я  представляю его в качестве своего ПОРТФОЛИО. Надеюсь, что моя работа не оставит Вас без внимания.
+		И так...</p>
+     </div>
+    <img src="img/img1.jpg" class="image" alt="">
+
+ <!-- Основной контент на сайте будет содержаться в элементе main-->
+    <main>
+        <!-- Главная секция, на ней будет расположен слайдер со всякой привлекающей пользователя инофрмацией -->
+        <section class="main">
+            <button>
+                <img src="./img/arrow-left.svg" alt="" width="35">
+            </button>
+           <h1></h1>
+			<link rel="stylesheet" href="f.css">
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Вперед/назад элементы управления
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Элементы управления миниатюрами изображений
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</head>
+
+<body>
+<!-- Контейнер слайд-шоу -->
+<div class="slideshow-container">
+
+  <!-- изображения с числом и текстом подписи -->
+ 
+<div class="mySlides ">
+    <div class="numbertext">1 / 10</div>
+    <img src="img/дипломы.jpg" style="width:100%">
+    <div class="text">"Это мои дипломы."</div>
+  </div>
+
+<div class="mySlides ">
+    <div class="numbertext">2 / 10</div>
+    <img src="img/гкн.jpg" style="width:50%">
+    <div class="text">"фото с сайта бывшей работы"</div>
+  </div>
+
+ <div class="mySlides ">
+    <div class="numbertext">3 / 10</div>
+    <img src="img/икона.jpg" style="width:100%">
+    <div class="text">"Моё произведение написано маслом на холсте"</div>
+  </div>
+  
+  <div class="mySlides ">
+    <div class="numbertext">4 / 10</div>
+    <img src="img/три медведя.jpg" style="width:120%">
+    <div class="text">"Моё произведение вышивка крестом"</div>
+  </div>
+  
+  <div class="mySlides ">
+    <div class="numbertext">5 / 10</div>
+    <img src="img/Оптина Пустынь.jpg" style="width:100%">
+    <div class="text">"Я в монастыре "Оптина Пустынь"</div>
+  </div>
+  
+  <div class="mySlides ">
+    <div class="numbertext">6 / 10</div>
+    <img src="img/я и волк.jpg" style="width:80%">
+    <div class="text">"В домашней обстановке"</div>
+  </div>
+  
+ <div class="mySlides ">
+    <div class="numbertext">7 / 10</div>
+    <img src="img/закуска.jpg" style="width:80%">
+    <div class="text">"ЗАКУСКА. Приготовлено к празднику"</div>
+  </div> 
+  
+  <div class="mySlides ">
+    <div class="numbertext">8 / 10</div>
+    <img src="img/грибочки из яиц.jpg" style="width:80%">
+    <div class="text">ЗАКУСКА "Грибочки".</div>
+  </div>
+  
+  <div class="mySlides ">
+    <div class="numbertext">9 / 10</div>
+    <img src="img/красивые слова.jpg" style="width:110%">
+    <div class="text">"КРАСИВЫЕ СЛОВА"</div>
+  </div>
+  
+  
+ 
+  <!-- Вперед и назад кнопки -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- Точки/круги -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </body>
+ 
+			
+        </section>
+<!--  -->
+		 <!-- Левое меню и Контент -->
+        <div id="content">
+         
+            <!-- Контент - правый блок -->
+            <div class="right">
+                <h1></h1>
+                <p>фото</p>
+				
+                
+  </div>
+             
+           
+             
+            </div>
+         
+        </div>
+         
+        <div class="myclr"></div>
+         
+
+</body>
+
+</html>
